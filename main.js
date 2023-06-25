@@ -1,9 +1,9 @@
 kissImg = [{
-    image: 'https://i.imgur.com/7oLlNkm.jpg'
-}, { image: 'https://i.imgur.com/SZV4YnG.jpg' }]
+    image: 'configs/frogKingWait.jpeg'
+}, { image: 'configs/frogKingKiss.jpeg' }]
 let kissTimes = 0
-const pleaseKiss = new Audio("https://www.myinstants.com/media/sounds/givemeakiss-taiwanese-new.mp3")
-const kissSound = new Audio("https://www.myinstants.com/media/sounds/quick-kiss.mp3")
+const pleaseKiss = new Audio("configs/giveMeAKissTaiwanese.mp3")
+const kissSound = new Audio("configs/quickKiss.mp3")
 const dataPanel = document.querySelector('#data-panel')
 let kissEnd = true
 
@@ -17,6 +17,7 @@ function showImg(image) {
     `
     return htmlContent
 };
+
 function showGameFinished(kissTimes) {
     const div = document.createElement('div');
     div.classList.add('completed');
